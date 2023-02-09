@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionYogahome" class="yoga-bg text-center p-4">
+        <h1 class="yoga-home-head">Discover the yogi life on <br /> the Yoga Experience Platform</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <img src="https://assets.ccbp.in/frontend/static-website/yoga-girl-with-headphones-img.png" class="w-75" />
+        </div>
+        <p class="yoga-home-dis">Yoga poses strengthen and open tight areas of the body</p>
+        <button class="button w-25" onclick="display('sectionYogatypes')">Get Started</button>
+    </div>
+    <div id="sectionYogatypes" class="yoga-types-bg p-4">
+        <div class="text-center">
+            <img src="https://assets.ccbp.in/frontend/static-website/yoga-girl-without-headphones-img.png" class="w-75" />
+        </div>
+        <h1 class="yoga-types-head pt-3">Types Of Yoga</h1>
+        <div class="yoga-type-card d-flex flex-row mb-3">
+            <img src="https://assets.ccbp.in/frontend/static-website/yoga-card1-img.png" class="w-25 mr-3" />
+            <div class="d-flex flex-column justify-content-center pl-3">
+                <h1 class="yoga-type-name">Acro yoga</h1>
+                <p class="yoga-type-dis">It serves as a training to increase strength and helps to build lean muscle mass throughout the body.</p>
+            </div>
+        </div>
+        <div class="yoga-type-card d-flex flex-row mb-3">
+            <img src="https://assets.ccbp.in/frontend/static-website/yoga-card2-img.png" class="w-25 mr-3" />
+            <div class="d-flex flex-column justify-content-center pl-3">
+
+                <h1 class="yoga-type-name">Vinyasa yoga</h1>
+                <p class="yoga-type-dis">It stretches and relaxes your body, improves stamina and memory.</p>
+            </div>
+        </div>
+        <div class="yoga-type-card d-flex flex-row mb-3">
+            <img src="https://assets.ccbp.in/frontend/static-website/yoga-card3-img.png" class="w-25 mr-3" />
+            <div class="d-flex flex-column justify-content-center pl-3">
+                <h1 class="yoga-type-name mb-3">Hatha yoga</h1>
+                <p class="yoga-type-dis">It introduces beginners to the main relaxation techniques and asanas</p>
+            </div>
+        </div>
+        <div class="yoga-type-card d-flex flex-row mb-3">
+            <img src="https://assets.ccbp.in/frontend/static-website/yoga-card4-img.png" class="w-25 mr-3" />
+            <div class="d-flex flex-column justify-content-center pl-3">
+                <h1 class="yoga-type-name mb-3">Kundhalini yoga</h1>
+                <p class="yoga-type-dis">It helps relax and restore the mind and the body, improving strength, flexibility, and endurance.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="button w-25" onclick="display('sectionYogahome')">Back</button>
+        </div>
+    </div>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.yoga-bg {
+    background-image: url("https://assets.ccbp.in/frontend/static-website/yoga-bg.png");
+    background-size: cover;
+}
+
+.yoga-home-head {
+    color: #132d84;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 120px;
+}
+
+.yoga-home-dis {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 300;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #253263;
+    border-radius: 5px;
+    border-width: 0px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+    height: 57px;
+    width: 100px;
+}
+
+.yoga-types-bg {
+    background-color: #ffedcb;
+}
+
+.yoga-types-head {
+    color: #132d84;
+    font-size: 45px;
+    text-align: center;
+    margin: 20px;
+}
+
+.yoga-type-card {
+    background-color: #fad693;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.yoga-type-name {
+    font-family: "Roboto";
+    color: #253263;
+    font-size: 37px;
+    font-weight: bold;
+
+}
+
+.yoga-type-dis {
+    font-family: "Roboto";
+    color: #132d84;
+    font-size: 23px;
+    font-weight: 400;
+}
+  </style>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
